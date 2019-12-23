@@ -1,7 +1,8 @@
-// Copyright 2019 Kirill <your_email>
+// Copyright 2018 Your Name <your_email>
 
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
+
 
 #include <boost/filesystem.hpp>
 #include <iostream>
@@ -53,14 +54,12 @@ public:
         cout << " files:" << _file_names.size();
         cout << " lastdate: " << _last_date << endl;
     }
-
 public:
     uint32_t _number_of_account;
     //uint32_t _files_quantity;
     vector <string> _file_names;
     uint32_t _last_date;
 };
-
 class broker{
 public:
     explicit broker(string &_name){
